@@ -1,0 +1,23 @@
+class Config:
+    pass
+
+Config.type = '$_POST[type]'
+
+Config.lambda_0 = "parseNumber($_POST[wlCentral])"
+Config.specResolution = "parseNumber($_POST[specResolution])"
+Config.finesse = "parseNumber($_POST[finesse])"
+Config.focalLength = "parseNumber($_POST[focal_length])"
+Config.extrapolate = "(parseNumber($_POST[extrapolate]) / 100)"
+
+Config.width = "parseNumber($_POST[width])"
+Config.height = "parseNumber($_POST[height])"
+Config.pixelSize = "parseNumber($_POST[pixel_size])"
+Config.binning = "parseNumber($_POST[binning])"
+
+Config.output = './temp_output.fits'
+Config.input_wavelength = "parseNumber($_POST[wlSource])"
+Config.input_image = './temp_image.fits'
+Config.input_spectrum = './temp_spectrum.txt'
+    
+EConfig.verbose = True
+EConfig.overwrite = True
